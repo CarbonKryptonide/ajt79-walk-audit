@@ -1,0 +1,6 @@
+/.lake/
+/build/
+/computations/__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

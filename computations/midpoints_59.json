@@ -1,0 +1,475 @@
+{
+  "prime": 59,
+  "search_bound": 8,
+  "minimum": 8,
+  "orbit_count": 5,
+  "set_count": 17110,
+  "orbits": [
+    {
+      "points": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        27,
+        44,
+        53
+      ],
+      "affine_stabilizer_size": 1,
+      "orbit_size": 3422,
+      "difference_support_size": 39,
+      "difference_multiplicity_histogram_nonzero_shifts": {
+        "0": 20,
+        "1": 22,
+        "2": 14,
+        "3": 2
+      },
+      "sum_support_size": 27,
+      "additive_energy": 160,
+      "translated_product_support_size_histogram": {
+        "22": 1,
+        "23": 1,
+        "24": 3,
+        "25": 4,
+        "26": 4,
+        "27": 3,
+        "28": 8,
+        "29": 5,
+        "30": 11,
+        "31": 12,
+        "32": 4,
+        "33": 3
+      },
+      "affine_self_intersection_histogram": {
+        "0": 950,
+        "1": 1508,
+        "2": 728,
+        "3": 202,
+        "4": 31,
+        "5": 2,
+        "8": 1
+      },
+      "best_stationary_policy": {
+        "policies": 1,
+        "stationary_weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_pairs": [
+          [
+            6,
+            53
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            27,
+            44
+          ],
+          [
+            1,
+            53
+          ],
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            44
+          ]
+        ],
+        "exp_2H_approx": 63.99999999999998,
+        "exp_2H_lt_p_exact": false
+      }
+    },
+    {
+      "points": [
+        0,
+        1,
+        2,
+        3,
+        16,
+        27,
+        32,
+        38
+      ],
+      "affine_stabilizer_size": 1,
+      "orbit_size": 3422,
+      "difference_support_size": 39,
+      "difference_multiplicity_histogram_nonzero_shifts": {
+        "0": 20,
+        "1": 22,
+        "2": 14,
+        "3": 2
+      },
+      "sum_support_size": 27,
+      "additive_energy": 160,
+      "translated_product_support_size_histogram": {
+        "23": 2,
+        "25": 2,
+        "26": 5,
+        "27": 8,
+        "28": 10,
+        "29": 9,
+        "30": 9,
+        "31": 9,
+        "32": 5
+      },
+      "affine_self_intersection_histogram": {
+        "0": 964,
+        "1": 1464,
+        "2": 776,
+        "3": 182,
+        "4": 33,
+        "5": 2,
+        "8": 1
+      },
+      "best_stationary_policy": {
+        "policies": 1,
+        "stationary_weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_pairs": [
+          [
+            27,
+            32
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            27,
+            38
+          ],
+          [
+            0,
+            32
+          ],
+          [
+            16,
+            38
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            16
+          ]
+        ],
+        "exp_2H_approx": 63.99999999999998,
+        "exp_2H_lt_p_exact": false
+      }
+    },
+    {
+      "points": [
+        0,
+        1,
+        2,
+        3,
+        19,
+        30,
+        35,
+        40
+      ],
+      "affine_stabilizer_size": 1,
+      "orbit_size": 3422,
+      "difference_support_size": 39,
+      "difference_multiplicity_histogram_nonzero_shifts": {
+        "0": 20,
+        "1": 22,
+        "2": 14,
+        "3": 2
+      },
+      "sum_support_size": 27,
+      "additive_energy": 160,
+      "translated_product_support_size_histogram": {
+        "22": 1,
+        "23": 2,
+        "24": 2,
+        "26": 9,
+        "27": 1,
+        "28": 5,
+        "29": 11,
+        "30": 12,
+        "31": 7,
+        "32": 9
+      },
+      "affine_self_intersection_histogram": {
+        "0": 956,
+        "1": 1488,
+        "2": 752,
+        "3": 190,
+        "4": 33,
+        "5": 2,
+        "8": 1
+      },
+      "best_stationary_policy": {
+        "policies": 1,
+        "stationary_weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_pairs": [
+          [
+            19,
+            40
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            30,
+            35
+          ],
+          [
+            3,
+            35
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            30,
+            40
+          ],
+          [
+            2,
+            19
+          ]
+        ],
+        "exp_2H_approx": 63.99999999999998,
+        "exp_2H_lt_p_exact": false
+      }
+    },
+    {
+      "points": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        12,
+        20,
+        39
+      ],
+      "affine_stabilizer_size": 1,
+      "orbit_size": 3422,
+      "difference_support_size": 41,
+      "difference_multiplicity_histogram_nonzero_shifts": {
+        "0": 18,
+        "1": 24,
+        "2": 16
+      },
+      "sum_support_size": 28,
+      "additive_energy": 152,
+      "translated_product_support_size_histogram": {
+        "21": 1,
+        "23": 1,
+        "25": 4,
+        "26": 7,
+        "27": 4,
+        "28": 5,
+        "29": 9,
+        "30": 13,
+        "31": 8,
+        "32": 6,
+        "33": 1
+      },
+      "affine_self_intersection_histogram": {
+        "0": 963,
+        "1": 1464,
+        "2": 780,
+        "3": 180,
+        "4": 30,
+        "5": 4,
+        "8": 1
+      },
+      "best_stationary_policy": {
+        "policies": 1,
+        "stationary_weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_pairs": [
+          [
+            20,
+            39
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            1,
+            39
+          ],
+          [
+            7,
+            12
+          ]
+        ],
+        "exp_2H_approx": 63.99999999999998,
+        "exp_2H_lt_p_exact": false
+      }
+    },
+    {
+      "points": [
+        0,
+        1,
+        2,
+        4,
+        9,
+        17,
+        32,
+        50
+      ],
+      "affine_stabilizer_size": 1,
+      "orbit_size": 3422,
+      "difference_support_size": 41,
+      "difference_multiplicity_histogram_nonzero_shifts": {
+        "0": 18,
+        "1": 24,
+        "2": 16
+      },
+      "sum_support_size": 28,
+      "additive_energy": 152,
+      "translated_product_support_size_histogram": {
+        "23": 1,
+        "24": 1,
+        "25": 6,
+        "26": 4,
+        "27": 4,
+        "28": 9,
+        "29": 8,
+        "30": 10,
+        "31": 10,
+        "32": 5,
+        "33": 1
+      },
+      "affine_self_intersection_histogram": {
+        "0": 957,
+        "1": 1486,
+        "2": 750,
+        "3": 198,
+        "4": 26,
+        "5": 4,
+        "8": 1
+      },
+      "best_stationary_policy": {
+        "policies": 1,
+        "stationary_weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "endpoint_pairs": [
+          [
+            9,
+            50
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            17,
+            50
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            2,
+            32
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            9,
+            32
+          ]
+        ],
+        "exp_2H_approx": 63.99999999999998,
+        "exp_2H_lt_p_exact": false
+      }
+    }
+  ]
+}

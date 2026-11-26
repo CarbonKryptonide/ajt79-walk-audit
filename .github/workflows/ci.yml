@@ -1,0 +1,60 @@
+name: Verification
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  python-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify the finite certificates and stress tests
+        run: |
+          python3 computations/verify_stationarity.py
+          python3 computations/test_routes.py
+
+  lean-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan and the pinned Lean toolchain
+        run: |
+          curl --fail --silent --show-error --location --retry 3 \
+            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
+            --output "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          "$HOME/.elan/bin/elan" toolchain install "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Check for forbidden proof constructs
+        run: |
+          # The pattern matches whole words. '#print axioms' is allowed.
+          if grep -rnE '\b(sorry|admit|axiom|native_decide)\b' WalkAudit.lean WalkAudit/; then
+            echo "::error::Found a forbidden proof construct."
+            exit 1
+          else
+            status=$?
+            test "$status" -eq 1
+          fi
+
+      - name: Fetch Mathlib cache and build
+        run: |
+          lake exe cache get
+          lake build
+
+      - name: Print and verify theorem axioms
+        run: |
+          lake env lean WalkAudit.lean | tee "$RUNNER_TEMP/axioms.txt"
+          diff -u "$RUNNER_TEMP/axioms.txt" - <<'EXPECTED'
+          'Holding.field_midpoints' depends on axioms: [propext, Quot.sound]
+          'Holding.holding_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+          'Reset.reset_walk_audit' depends on axioms: [propext, Classical.choice, Quot.sound]
+          EXPECTED
