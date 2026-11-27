@@ -35,7 +35,7 @@ Exact `#print axioms` output from `lake env lean WalkAudit.lean`:
 'Reset.reset_walk_audit' depends on axioms: [propext, Classical.choice, Quot.sound]
 ```
 
-The mathematical report establishes barriers to independent reset coupling, uniform $\operatorname{poly}(n)77^n$ overlap bounds for fixed nine-point alphabets, and character-by-character group-ring lifting. The accompanying Python stress tests include all 41,904 invertible $2\times2$ matrices over $\mathbb F_5,\mathbb F_7,\mathbb F_{11},\mathbb F_{13}$. [Audit report](AUDIT_REPORT.md) · [Stress tests](computations/test_routes.py)
+The mathematical report establishes barriers to independent reset coupling, uniform $\mathrm{poly}(n)77^n$ overlap bounds for fixed nine-point alphabets, and character-by-character group-ring lifting. The accompanying Python stress tests include all 41,904 invertible $2\times2$ matrices over $\mathbb F_5,\mathbb F_7,\mathbb F_{11},\mathbb F_{13}$. [Audit report](AUDIT_REPORT.md) · [Stress tests](computations/test_routes.py)
 
 ## Repository layout
 
