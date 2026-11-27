@@ -2,7 +2,7 @@
 
 [![Verification](https://github.com/CarbonKryptonide/ajt79-walk-audit/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/CarbonKryptonide/ajt79-walk-audit/actions/workflows/ci.yml)
 
-**The all-dimension Alon–Jaeger–Tarsi conjecture at \(p=79\) remains open and is unproved here.** This independent research audit verifies two narrower results in Lean 4. A two-coordinate walk has an expected low-state fraction of \(59/197>21/100\) at both phases of every cycle, exposing the value-dependent holding obstruction in the inference from the embedded Markov chain in Nagy–Pach–Tomon’s unpublished Appendix C. An exact dyadic reset walk has stationary law \(\pi_p\) satisfying \(2H(\pi_p)<\log p\) for \(p\in\{59,61,79\}\). The Lean sources total 221 lines, with zero `sorry`, zero custom axioms, and no `native_decide`.
+**The all-dimension Alon–Jaeger–Tarsi conjecture at $p=79$ remains open and is unproved here.** This independent research audit verifies two narrower results in Lean 4. A two-coordinate walk has an expected low-state fraction of $59/197>21/100$ at both phases of every cycle, exposing the value-dependent holding obstruction in the inference from the embedded Markov chain in Nagy–Pach–Tomon’s unpublished Appendix C. An exact dyadic reset walk has stationary law $\pi_p$ satisfying $2H(\pi_p)<\log p$ for $p\in\{59,61,79\}$. The Lean sources total 221 lines, with zero `sorry`, zero custom axioms, and no `native_decide`.
 
 ## Kernel-verified statements
 
@@ -35,7 +35,7 @@ Exact `#print axioms` output from `lake env lean WalkAudit.lean`:
 'Reset.reset_walk_audit' depends on axioms: [propext, Classical.choice, Quot.sound]
 ```
 
-The mathematical report establishes barriers to independent reset coupling, uniform \(\operatorname{poly}(n)77^n\) overlap bounds for fixed nine-point alphabets, and character-by-character group-ring lifting. The accompanying Python stress tests include all 41,904 invertible \(2\times2\) matrices over \(\mathbb F_5,\mathbb F_7,\mathbb F_{11},\mathbb F_{13}\). [Audit report](AUDIT_REPORT.md) · [Stress tests](computations/test_routes.py)
+The mathematical report establishes barriers to independent reset coupling, uniform $\operatorname{poly}(n)77^n$ overlap bounds for fixed nine-point alphabets, and character-by-character group-ring lifting. The accompanying Python stress tests include all 41,904 invertible $2\times2$ matrices over $\mathbb F_5,\mathbb F_7,\mathbb F_{11},\mathbb F_{13}$. [Audit report](AUDIT_REPORT.md) · [Stress tests](computations/test_routes.py)
 
 ## Repository layout
 
@@ -75,4 +75,4 @@ This independent audit used AI assistance for multi-agent exploration of the pro
 
 ## 中文摘要
 
-\(p=79\) 时任意维数的 Alon–Jaeger–Tarsi 猜想仍是公开问题，本仓库未给出证明。Lean 4 内核验证了原预印本附录 C 中依赖状态的停留机制反例（低状态期望比例为 \(59/197>21/100\)），以及 \(p=59,61,79\) 上重置随机游走的平稳分布熵界 \(2H(\pi_p)<\log p\)。审计报告给出独立耦合、固定字母表重叠计数和逐特征标群环提升的具体障碍，Python 脚本可独立复核有限计算。本项目在独立研究审计中使用了 AI 多代理探索和 Lean 4 形式化辅助。
+$p=79$ 时任意维数的 Alon–Jaeger–Tarsi 猜想仍是公开问题，本仓库未给出证明。Lean 4 内核验证了原预印本附录 C 中依赖状态的停留机制反例（低状态期望比例为 $59/197>21/100$），以及 $p=59,61,79$ 上重置随机游走的平稳分布熵界 $2H(\pi_p)<\log p$。审计报告给出独立耦合、固定字母表重叠计数和逐特征标群环提升的具体障碍，Python 脚本可独立复核有限计算。本项目在独立研究审计中使用了 AI 多代理探索和 Lean 4 形式化辅助。
