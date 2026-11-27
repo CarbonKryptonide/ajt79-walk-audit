@@ -2,7 +2,7 @@
 
 [![Verification](https://github.com/CarbonKryptonide/ajt79-walk-audit/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/CarbonKryptonide/ajt79-walk-audit/actions/workflows/ci.yml)
 
-**The all-dimension Alon–Jaeger–Tarsi conjecture at $p=79$ remains open and is unproved here.** This independent research audit verifies two narrower results in Lean 4. A two-coordinate walk has an expected low-state fraction of $59/197>21/100$ at both phases of every cycle, exposing the value-dependent holding obstruction in the inference from the embedded Markov chain in Nagy–Pach–Tomon’s unpublished Appendix C. An exact dyadic reset walk has stationary law $\pi_p$ satisfying $2H(\pi_p)<\log p$ for $p\in\{59,61,79\}$. The Lean sources total 221 lines, with zero `sorry`, zero custom axioms, and no `native_decide`.
+**The all-dimension Alon–Jaeger–Tarsi conjecture at $p=79$ remains open and is unproved here.** This independent research audit verifies two narrower results in Lean 4. A two-coordinate walk has an expected low-state fraction of $59/197>21/100$ at both phases of every cycle, exposing the value-dependent holding obstruction in the inference from the embedded Markov chain in Nagy–Pach–Tomon’s unpublished Appendix C. An exact dyadic reset walk has stationary law $\pi_p$ satisfying $2H(\pi_p)<\log p$ for $`p\in\{59,61,79\}`$. The Lean sources total 221 lines, with zero `sorry`, zero custom axioms, and no `native_decide`.
 
 ## Kernel-verified statements
 
